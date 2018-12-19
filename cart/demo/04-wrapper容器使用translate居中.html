@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: pink;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 999;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background: green;
+            /*position: relative;*/
+            transform: translateX(1px);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <!--1. 位移转换后  会影响层级关系  理解成设置了定位-->
+    <!--2. z-index 只对定位容器生效 -->
+    <div class="box2"></div>
+    <div class="box1"></div>
+</body>
+</html>
